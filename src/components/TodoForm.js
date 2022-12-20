@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const TodoForm = ({ handleSubmit }) => {
+const TodoForm = ({ handleSubmit,theme,setTheme }) => {
   const [todoItem, setTodoItem] = useState("");
   const handleChange = (e) => {
     setTodoItem(e.target.value);
@@ -17,7 +17,7 @@ const TodoForm = ({ handleSubmit }) => {
         handleSubmit(todoItem);
         setTodoItem("");
       }}>
-        <input
+        <input className= {theme==='light'?"light":"dark"}
           type="text"
           value={todoItem}
           onChange={(e) => handleChange(e)}
