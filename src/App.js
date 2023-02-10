@@ -42,7 +42,7 @@ function App() {
 
 
   return (
-    <>
+    <div className="main">
     <div>
     {theme==='light'? <img src={light_bg} alt="light-bg" /> : <img src={dark_bg} alt="dark-bg" />}
     </div>
@@ -60,7 +60,7 @@ function App() {
           <TodoList list={list} setList={setList} count={count} setCount={setCount} theme={theme} setTheme = {setTheme}/>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
