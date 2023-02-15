@@ -35,8 +35,10 @@ function App() {
     // const data = localStorage.getItem("todo_list");
     // console.log(data);
     const newList = JSON.parse(localStorage.getItem("todo_list"));
-    setList(newList);
-    setCount(newList.length);
+    if(newList){
+      setList(newList);
+      setCount(newList.length);
+    }
   }, [])
   
 

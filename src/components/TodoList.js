@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
 import { GiCrossMark } from "react-icons/gi";
 
 const TodoList = ({ list, setList, count, setCount,theme,setTheme }) => {
